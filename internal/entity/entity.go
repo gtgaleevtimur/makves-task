@@ -1,0 +1,110 @@
+package entity
+
+import "gorm.io/gorm"
+
+type NodeGorm struct {
+	gorm.Model
+
+	No                        string `json:"omitempty" csv:"#"`
+	ID                        string `json:"id" csv:"id"`
+	UID                       string `json:"uid" csv:"uid"`
+	Domain                    string `json:"domain" csv:"domain"`
+	Cn                        string `json:"cn" csv:"cn"`
+	Department                string `json:"department" csv:"department"`
+	Title                     string `json:"title" csv:"title"`
+	Who                       string `json:"who" csv:"who"`
+	LogonCount                string `json:"logon_count" csv:"logon_count"`
+	NumLogons7                string `json:"num_logons7" csv:"num_logons7"`
+	NumShare7                 string `json:"num_share7" csv:"num_share7"`
+	NumFile7                  string `json:"num_file7" csv:"num_file7"`
+	NumAd7                    string `json:"num_ad7" csv:"num_ad7"`
+	NumN7                     string `json:"num_n7" csv:"num_n7"`
+	NumLogons14               string `json:"num_logons14" csv:"num_logons14"`
+	NumShare14                string `json:"num_share14" csv:"num_share14"`
+	NumFile14                 string `json:"num_file14" csv:"num_file14"`
+	NumAd14                   string `json:"num_ad14" csv:"num_ad14"`
+	NumN14                    string `json:"num_n14" csv:"num_n14"`
+	NumLogons30               string `json:"num_logons30" csv:"num_logons30"`
+	NumShare30                string `json:"num_share30" csv:"num_share30"`
+	NumFile30                 string `json:"num_file30" csv:"num_file30"`
+	NumAd30                   string `json:"num_ad30" csv:"num_ad30"`
+	NumN30                    string `json:"num_n30" csv:"num_n30"`
+	NumLogons150              string `json:"num_logons150" csv:"num_logons150"`
+	NumShare150               string `json:"num_share150" csv:"num_share150"`
+	NumFile150                string `json:"num_file150" csv:"num_file150"`
+	NumAd150                  string `json:"num_ad150" csv:"num_ad150"`
+	NumN150                   string `json:"num_n150" csv:"num_n150"`
+	NumLogons365              string `json:"num_logons365" csv:"num_logons365"`
+	NumShare365               string `json:"num_share365" csv:"num_share365"`
+	NumFile365                string `json:"num_file365" csv:"num_file365"`
+	NumAd365                  string `json:"num_ad365" csv:"num_ad365"`
+	NumN365                   string `json:"num_n365" csv:"num_n365"`
+	HasUserPrincipalName      string `json:"has_user_principal_name" csv:"has_user_principal_name"`
+	HasMail                   string `json:"has_mail" csv:"has_mail"`
+	HasPhone                  string `json:"has_phone" csv:"has_phone"`
+	FlagDisabled              string `json:"flag_disabled" csv:"flag_disabled"`
+	FlagLockout               string `json:"flag_lockout" csv:"flag_lockout"`
+	FlagPasswordNotRequired   string `json:"flag_password_not_required" csv:"flag_password_not_required"`
+	FlagPasswordCantChange    string `json:"flag_password_cant_change" csv:"flag_password_cant_change"`
+	FlagDontExpirePassword    string `json:"flag_dont_expire_password" csv:"flag_dont_expire_password"`
+	OwnedFiles                string `json:"owned_files" csv:"owned_files"`
+	NumMailboxes              string `json:"num_mailboxes" csv:"num_mailboxes"`
+	NumMemberOfGroups         string `json:"num_member_of_groups" csv:"num_member_of_groups"`
+	NumMemberOfIndirectGroups string `json:"num_member_of_indirect_groups" csv:"num_member_of_indirect_groups"`
+	MemberOfIndirectGroupsIDs string `json:"member_of_indirect_groups_ids" csv:"member_of_indirect_groups_ids"`
+	MemberOfGroupsIDS         string `json:"member_of_groups_ids" csv:"member_of_groups_ids"`
+	IsAdmin                   string `json:"is_admin" csv:"is_admin"`
+	IsService                 string `json:"is_service" csv:"is_service"`
+}
+
+type Node struct {
+	ID                        string `json:"id" csv:"id"`
+	UID                       string `json:"uid" csv:"uid"`
+	Domain                    string `json:"domain" csv:"domain"`
+	Cn                        string `json:"cn" csv:"cn"`
+	Department                string `json:"department" csv:"department"`
+	Title                     string `json:"title" csv:"title"`
+	Who                       string `json:"who" csv:"who"`
+	LogonCount                string `json:"logon_count" csv:"logon_count"`
+	NumLogons7                string `json:"num_logons7" csv:"num_logons7"`
+	NumShare7                 string `json:"num_share7" csv:"num_share7"`
+	NumFile7                  string `json:"num_file7" csv:"num_file7"`
+	NumAd7                    string `json:"num_ad7" csv:"num_ad7"`
+	NumN7                     string `json:"num_n7" csv:"num_n7"`
+	NumLogons14               string `json:"num_logons14" csv:"num_logons14"`
+	NumShare14                string `json:"num_share14" csv:"num_share14"`
+	NumFile14                 string `json:"num_file14" csv:"num_file14"`
+	NumAd14                   string `json:"num_ad14" csv:"num_ad14"`
+	NumN14                    string `json:"num_n14" csv:"num_n14"`
+	NumLogons30               string `json:"num_logons30" csv:"num_logons30"`
+	NumShare30                string `json:"num_share30" csv:"num_share30"`
+	NumFile30                 string `json:"num_file30" csv:"num_file30"`
+	NumAd30                   string `json:"num_ad30" csv:"num_ad30"`
+	NumN30                    string `json:"num_n30" csv:"num_n30"`
+	NumLogons150              string `json:"num_logons150" csv:"num_logons150"`
+	NumShare150               string `json:"num_share150" csv:"num_share150"`
+	NumFile150                string `json:"num_file150" csv:"num_file150"`
+	NumAd150                  string `json:"num_ad150" csv:"num_ad150"`
+	NumN150                   string `json:"num_n150" csv:"num_n150"`
+	NumLogons365              string `json:"num_logons365" csv:"num_logons365"`
+	NumShare365               string `json:"num_share365" csv:"num_share365"`
+	NumFile365                string `json:"num_file365" csv:"num_file365"`
+	NumAd365                  string `json:"num_ad365" csv:"num_ad365"`
+	NumN365                   string `json:"num_n365" csv:"num_n365"`
+	HasUserPrincipalName      string `json:"has_user_principal_name" csv:"has_user_principal_name"`
+	HasMail                   string `json:"has_mail" csv:"has_mail"`
+	HasPhone                  string `json:"has_phone" csv:"has_phone"`
+	FlagDisabled              string `json:"flag_disabled" csv:"flag_disabled"`
+	FlagLockout               string `json:"flag_lockout" csv:"flag_lockout"`
+	FlagPasswordNotRequired   string `json:"flag_password_not_required" csv:"flag_password_not_required"`
+	FlagPasswordCantChange    string `json:"flag_password_cant_change" csv:"flag_password_cant_change"`
+	FlagDontExpirePassword    string `json:"flag_dont_expire_password" csv:"flag_dont_expire_password"`
+	OwnedFiles                string `json:"owned_files" csv:"owned_files"`
+	NumMailboxes              string `json:"num_mailboxes" csv:"num_mailboxes"`
+	NumMemberOfGroups         string `json:"num_member_of_groups" csv:"num_member_of_groups"`
+	NumMemberOfIndirectGroups string `json:"num_member_of_indirect_groups" csv:"num_member_of_indirect_groups"`
+	MemberOfIndirectGroupsIDs string `json:"member_of_indirect_groups_ids" csv:"member_of_indirect_groups_ids"`
+	MemberOfGroupsIDS         string `json:"member_of_groups_ids" csv:"member_of_groups_ids"`
+	IsAdmin                   string `json:"is_admin" csv:"is_admin"`
+	IsService                 string `json:"is_service" csv:"is_service"`
+}
